@@ -1,0 +1,147 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body., {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #FF5A5F;
+}
+
+.logo img {
+    height: 50px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Main section 1: background image and search */
+main section:first-of-type {
+    position: relative;
+    text-align: center;
+}
+
+main section:first-of-type img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+main section:first-of-type p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+main section:first-of-type input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    width: 400px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+main section:first-of-type input::placeholder {
+    color: #aaa;
+}
+
+/* Main section 2: About food delivery */
+main section:nth-of-type(2) {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+main section:nth-of-type(2) h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+main section:nth-of-type(2) p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.main-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.main-cards .card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.main-cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.main-cards .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.main-cards .card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
